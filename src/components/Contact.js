@@ -23,14 +23,14 @@ const Contact = () => {
   // };
   const [name, setName] = useState('');
   const  [email, setEmail] = useState('');
-  const  [subject, setSubject] = useState('');
+  // const  [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setName('');
     setEmail('');
-    setSubject('');
+    // setSubject('');
     setMessage('');
 
   }
@@ -41,8 +41,8 @@ const Contact = () => {
     <Container className="d-flex justify-content-center align-items-center vh-100">
       <Card style={{ width: '400px' }}>
         <Card.Body>
-          <Card.Title className="text-center">Contact Us</Card.Title>
-          <Form onSubmit={handleSubmit} action="https://getform.io/f/broodpwa" method="POST">
+          <Card.Title className="text-center">Get in Touch</Card.Title>
+          <Form onSubmit={handleSubmit} action="https://getform.io/f/bkkkormb" method="POST">
             <Form.Group className="mb-3">
               <Form.Control 
                 type="text" 
@@ -63,7 +63,7 @@ const Contact = () => {
                 onChange={(e) => setEmail(e.target.value)} 
               />
             </Form.Group>
-            <Form.Group className="mb-3">
+            {/* <Form.Group className="mb-3">
               <Form.Control 
                 type="text" 
                 name="subject" 
@@ -72,7 +72,7 @@ const Contact = () => {
                 value={subject} 
                 onChange={(e) => setSubject(e.target.value)} 
               />
-            </Form.Group>
+            </Form.Group> */}
             <Form.Group className="mb-3">
               <Form.Control 
                 as="textarea" 
