@@ -3,24 +3,38 @@ import { Container, Card, Form, Button } from 'react-bootstrap'; // Import React
 import Footer from './Footer';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(null);
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: '',
+  // });
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(null);
+  // const [success, setSuccess] = useState(null);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   // ... (Your fetch logic to GetForm or your serverless function remains the same)
+  // };
+  const [name, setName] = useState('');
+  const  [email, setEmail] = useState('');
+  const  [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // ... (Your fetch logic to GetForm or your serverless function remains the same)
-  };
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+
+  }
+
 
   return (
   <div>
@@ -35,8 +49,8 @@ const Contact = () => {
                 name="name" 
                 placeholder="Your Name" 
                 required 
-                value={formData.name} 
-                onChange={handleChange} 
+                value={name} 
+                onChange={(e) => setName(e.target.value)} 
               />
             </Form.Group>
             <Form.Group className="mb-3">
@@ -45,8 +59,8 @@ const Contact = () => {
                 name="email" 
                 placeholder="Your Email" 
                 required 
-                value={formData.email} 
-                onChange={handleChange} 
+                value={email} 
+                onChange={(e) => setEmail(e.target.value)} 
               />
             </Form.Group>
             <Form.Group className="mb-3">
@@ -55,8 +69,8 @@ const Contact = () => {
                 name="subject" 
                 placeholder="Subject" 
                 required 
-                value={formData.subject} 
-                onChange={handleChange} 
+                value={subject} 
+                onChange={(e) => setSubject(e.target.value)} 
               />
             </Form.Group>
             <Form.Group className="mb-3">
@@ -66,14 +80,14 @@ const Contact = () => {
                 rows={5} 
                 placeholder="Message" 
                 required 
-                value={formData.message} 
-                onChange={handleChange} 
+                value={message} 
+                onChange={(e) => setMessage(e.target.value)} 
               />
             </Form.Group>
             <div className="text-center">
-              {loading && <div className="loading">Loading</div>}
+              {/* {loading && <div className="loading">Loading</div>}
               {error && <div className="error-message">{error}</div>}
-              {success && <div className="sent-message">{success}</div>}
+              {success && <div className="sent-message">{success}</div>} */}
               <Button variant="primary" type="submit">Send Message</Button>
             </div>
           </Form>
