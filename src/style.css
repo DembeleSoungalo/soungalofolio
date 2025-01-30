@@ -417,6 +417,7 @@ button:focus {
 /* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
+  opacity: 0.7;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -532,7 +533,7 @@ button:focus {
 
 .btn-primary {
   color: #000000 !important;
-  background-color: #021bf8 !important;
+  background-color: var() !important;
   border-color: #ffffff !important;
 }
 
