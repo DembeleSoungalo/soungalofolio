@@ -1,40 +1,88 @@
-import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState } from 'react';
+import { Container, Card, Form, Button } from 'react-bootstrap'; // Import React-Bootstrap components
+import Footer from './Footer';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // ... (Your fetch logic to GetForm or your serverless function remains the same)
+  };
+
   return (
-    <div >
-        <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div className="row gy-4">
-
-            <div className="col-md-6">
-              <input type="text" name="name" className="form-control" placeholder="Your Name" required=""></input>
+  <div>
+    <Container className="d-flex justify-content-center align-items-center vh-100">
+      <Card style={{ width: '400px' }}>
+        <Card.Body>
+          <Card.Title className="text-center">Contact Us</Card.Title>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3">
+              <Form.Control 
+                type="text" 
+                name="name" 
+                placeholder="Your Name" 
+                required 
+                value={formData.name} 
+                onChange={handleChange} 
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Control 
+                type="email" 
+                name="email" 
+                placeholder="Your Email" 
+                required 
+                value={formData.email} 
+                onChange={handleChange} 
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Control 
+                type="text" 
+                name="subject" 
+                placeholder="Subject" 
+                required 
+                value={formData.subject} 
+                onChange={handleChange} 
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Control 
+                as="textarea" 
+                name="message" 
+                rows={5} 
+                placeholder="Message" 
+                required 
+                value={formData.message} 
+                onChange={handleChange} 
+              />
+            </Form.Group>
+            <div className="text-center">
+              {loading && <div className="loading">Loading</div>}
+              {error && <div className="error-message">{error}</div>}
+              {success && <div className="sent-message">{success}</div>}
+              <Button variant="primary" type="submit">Send Message</Button>
             </div>
-
-            <div className="col-md-6 ">
-              <input type="email" className="form-control" name="email" placeholder="Your Email" required=""></input>
-            </div>
-
-            <div className="col-md-12">
-              <input type="text" className="form-control" name="subject" placeholder="Subject" required=""></input>
-            </div>
-
-            <div className="col-md-12">
-              <textarea className="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div className="col-md-12 text-center">
-              <div className="loading">Loading</div>
-              <div className="error-message"></div>
-              <div className="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form>
+          </Form>
+        </Card.Body>
+      </Card>
+    </Container>
+    <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

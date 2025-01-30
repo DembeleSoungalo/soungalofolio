@@ -151,6 +151,10 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .sticky {
+    background-color: #dad9e4a9 !important;
+    
+  }
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -191,7 +195,7 @@ button:focus {
 }
 
 .navbar-nav .nav-item a {
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 1;
