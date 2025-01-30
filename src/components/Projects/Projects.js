@@ -28,7 +28,7 @@ function Projects() {
               title="Mini Ludo Game"
               description="A mini project that i Worked during Courses I make it using HTML, CSS and JavaScript."
               ghLink="https://github.com/"
-              demoLink="https://verdant-licorice-ebfc9.netlify.app/"
+              demoLink="https://verdant-licorice-ebfc9b.netlify.app/"
             />
           </Col>
 
@@ -39,7 +39,7 @@ function Projects() {
               title="Github User Profile Finder"
               description="A mini searching github user Profile using Github API , make with react.js and usig react bootstrap for design."
               ghLink="https://github.com/DembeleSougalo/projectb"
-              demoLink="https://projectb-vercel.app/"
+              demoLink="https://projectb-three.vercel.app/"
             />
           </Col>
 
@@ -50,21 +50,21 @@ function Projects() {
               title="Porfolio"
               description="My personnal Website build with react.js and using React Bootsrtap."
               ghLink="https://github.com/DembeleSoungalo/soungalofolio"
-              demoLink="https://www.soungalofolio-vercel.app/"              
+              demoLink="https://soungalofolio-vercel.app/"              
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Salam-Shop"
+              description="A small E-commerce base Website that i'm Working Now."
+              ghLink="https://github.com/SALAM-SHOP"
+              demoLink="https://salam-shop.vercel.app/"
             />
           </Col>
-
+        {/*
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
