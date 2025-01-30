@@ -28,7 +28,7 @@ const Contact = () => {
       <Card style={{ width: '400px' }}>
         <Card.Body>
           <Card.Title className="text-center">Contact Us</Card.Title>
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} action="https://getform.io/f/broodpwa" method="POST">
             <Form.Group className="mb-3">
               <Form.Control 
                 type="text" 
