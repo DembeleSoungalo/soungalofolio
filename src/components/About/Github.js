@@ -12,7 +12,8 @@ function Github() {
         username="DembeleSoungalo"
         blockSize={15}
         blockMargin={5}
-        color="#c084f5"
+        // color="#c084f5"
+        color="#014beb"
         fontSize={16}
       />
     </Row>

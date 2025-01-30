@@ -15,7 +15,7 @@ html {
     #ffffffad,
     rgba(243, 243, 245, 0.863)
   );
- --imp-text-color: #014BEB;
+ --imp-text-color: #014beb;
   /* --imp-text-color: #c770f0; */
 }
 
@@ -87,7 +87,7 @@ button:focus {
   backdrop-filter: blur(15px) !important;
 }
 .navbar .navbar-nav .nav-link {
-  color: #0e0c86 !important;
+  color: #0b21e7d7 !important;
   
 }
 
@@ -107,7 +107,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #5b50f4 !important;
+  background-color: #014beb !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
