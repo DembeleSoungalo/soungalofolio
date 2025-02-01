@@ -22,9 +22,8 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               Junior Front-End Web Developer
-               🤷‍♂️
               <br />
-              <br />I alaready aquired solid foundation in 
+              <br />I alaready acquired solid foundation in 
               <i>
                 <b className="bleu"> HTML, CSS , Javascript. </b>
               </i>
