@@ -187,6 +187,7 @@ button:focus {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
+ 
 }
 
 .navbar-nav .nav-item {
@@ -316,6 +317,9 @@ button:focus {
   }
   .Typewriter__cursor {
     display: none !important;
+  }
+  .main-name {
+    font-size: 1.8em !important;
   }
 }
 
