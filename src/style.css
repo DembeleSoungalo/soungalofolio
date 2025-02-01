@@ -321,6 +321,10 @@ button:focus {
   .main-name {
     font-size: 1em !important;
   }
+  .heading-name {
+  font-size: 1.5em !important;
+  
+}
 }
 
 .myAvtar {
