@@ -29,15 +29,20 @@ function Home() {
                 <Type />
               </div>
             </Col>
+            <Col md={4} className="myAvtar">
+                        <Tilt>
+                          <img src={myImg} className="img-fluid" alt="avatar" />
+                        </Tilt>
+                      </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              {/* <img
+            {/* <Col md={5} style={{ paddingBottom: 20 }}>
+               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
-              /> */}
-            </Col>
+              /> 
+            </Col> */}
           </Row>
         </Container>
       </Container>
