@@ -7,9 +7,7 @@
 
 
 
-## TL;DR
-
- credit to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio)
+ 
 
 ## Built With
 
@@ -48,3 +46,4 @@ You will find all the components used and you can edit your information accordin
 **🎨 Styled with React-Bootstrap and Css with easy to customize colors**
 
 **📱 Fully Responsive**
+credit to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio)
